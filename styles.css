@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping for elements in smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  flex: 1; /* Take full width on small screens */
+}
+
+header nav div a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.main_menu {
+  display: flex;
+  gap: 10px; /* Add spacing between menu items */
+}
+
+.main_menu a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack the logo and menu */
+    align-items: flex-start;
+    font-size: x-small;
+  }
+
+  .logo {
+    width: 100%; /* Logo takes full width on small screens */
+    margin-bottom: 10px; /* Add spacing below the logo */
+  }
+
+  .main_menu {
+    display: flex;
+    justify-content: space-around; /* Keep the links in a single row */
+    width: 100%; /* Take full width for the menu */
+  }
+
+  .main_menu a {
+    flex: 1; /* Ensure each menu item shares the space equally */
+    text-align: center;
+    padding: 10px;
+    border: none; /* Remove the border on small screens */
+  }
+}
