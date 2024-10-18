@@ -47,14 +47,30 @@ body {
 	width: 80px;
   }
 
-  .box-1 {
-	z-index: 2;
+  /* .box-1 {
 	top: 0%;
 	left: 55%;
   }
   .box-2 {
 	top: 0%;
 	right: 50%;
+  }
+  .box-3 {
+	bottom: 0px;
+	right: 50%;
+  }
+  .box-4 {
+	bottom: 0;
+	left: 55%;
+  } */
+
+  .box-1 {
+	top: 0%;
+	left: 0%;
+  }
+  .box-2 {
+	top: -7%;
+	right: -10%;
   }
   .box-3 {
 	bottom: 0px;
